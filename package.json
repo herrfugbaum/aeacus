@@ -2,7 +2,7 @@
   "name": "aeacus",
   "version": "0.0.1",
   "description": "JavaScript validation library.",
-  "main": ".src/index.js",
+  "main": "index.js",
   "scripts": {
     "lint": "standard --fix",
     "build:node": "babel src --presets env --out-dir dist",
@@ -15,7 +15,7 @@
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
-  }
+  },
   "standard": {
     "ignore": [
       "dist/",
