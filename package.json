@@ -9,7 +9,8 @@
     "build:docs": "jsdoc src -r -R README.md -d docs",
     "build": "npm run build:node && npm run build:docs",
     "pretest": "npm run lint && npm run build",
-    "test": "jest --notify"
+    "test": "jest --coverage",
+    "test:watch": "jest --watch --notify"
   },
   "standard": {
     "ignore": [
