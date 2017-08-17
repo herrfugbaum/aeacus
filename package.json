@@ -1,0 +1,40 @@
+{
+  "name": "aeacus",
+  "version": "0.0.1",
+  "description": "JavaScript validation library.",
+  "main": ".src/index.js",
+  "scripts": {
+    "lint": "standard --fix",
+    "build:node": "babel src --presets env --out-dir dist",
+    "build:docs": "jsdoc src -r -R README.md -d docs",
+    "build": "npm run build:node && npm run build:docs",
+    "pretest": "npm run lint && npm run build",
+    "test": "jest --notify"
+  },
+  "standard": {
+    "ignore": [
+      "dist/",
+      "docs/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herrfugbaum/aeacus.git"
+  },
+  "keywords": [],
+  "author": "Pascal Spiesz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herrfugbaum/aeacus./issues"
+  },
+  "homepage": "https://github.com/herrfugbaum/aeacus#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^20.0.3",
+    "babel-preset-env": "^1.6.0",
+    "jest": "^20.0.4",
+    "jsdoc": "^3.5.4",
+    "regenerator-runtime": "^0.11.0",
+    "standard": "^10.0.3"
+  }
+}

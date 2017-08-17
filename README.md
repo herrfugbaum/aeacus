@@ -1,0 +1,3 @@
+# Aeacus
+
+For now this project is just here so I can fiddle around with various tools & techniques...
